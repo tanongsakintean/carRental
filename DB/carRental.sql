@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Mar 10, 2023 at 01:12 PM
--- Server version: 5.7.34
--- PHP Version: 7.4.21
+-- Host: 127.0.0.1
+-- Generation Time: Mar 11, 2023 at 04:57 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.0.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,6 +37,16 @@ CREATE TABLE `tb_car` (
   `car_price` int(11) NOT NULL COMMENT 'ราคาเช่ารถ',
   `car_status` int(11) NOT NULL COMMENT '1=ใช้งานอยู่,2=ว่าง,3=อยู่ระหว่างซ่อม'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_car`
+--
+
+INSERT INTO `tb_car` (`car_id`, `car_img`, `car_name`, `car_reg`, `car_type`, `car_color`, `car_price`, `car_status`) VALUES
+(1, 'dog.png', 'edit1', 'edit1', 4, 'edit1', 250, 3),
+(5, 'capy.png', 'test1', 'test1', 3, 'test1', 500, 1),
+(7, 'Hyundai.jpg', 'test1', 'test1', 3, 'test1', 500, 3),
+(9, 'mikey3.jpg', 'test3', 'test3', 5, 'test3', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -103,7 +113,7 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT for table `tb_car`
 --
 ALTER TABLE `tb_car`
-  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ไอดีรถ';
+  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ไอดีรถ', AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tb_rent`
