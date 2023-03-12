@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Member</title>
+</head>
+
+<body>
+    <h1>แบบฟอร์มเพิ่มสมาชิก</h1>
+    <form enctype="multipart/form-data" action="insert_member.php" method="post">
+
+        <label for="user_id">ไอดีผู้ใช้งาน:</label>
+        <input type="text" id="user_id" name="user_id" required><br>
+
+        <label for="user_email">อีเมลล์:</label>
+        <input type="text" id="user_email" name="user_email" required><br>
+
+        <label for="user_password">รหัสผ่าน:</label>
+        <input type="text" id="user_password" name="user_password" required><br>
+
+        <label for="user_title">คำนำหน้าชื่อ:</label>
+        <select id="user_title" name="user_title" required>
+            <option value="" selected>เลือกคำหน้าชื่อ: </option>";
+            <option value="1">นาย</option>
+            <option value="2">นางสาว</option>
+            <option value="3">นาง</option>
+        </select><br>
+
+        <label for="user_fname">ชื่อ:</label>
+        <input type="text" id="user_fname" name="user_fname" required><br>
+
+        <label for="user_lname">นามสกุล:</label>
+        <input type="text" id="user_lname" name="user_lname" required><br>
+
+        <label for="user_gender">เพศ:</label>
+        <input type="text" id="user_gender" name="user_gender" required><br>
+
+        <label for="user_tel">เบอร์โทรศัพท์:</label>
+        <input type="text" id="user_tel" name="user_tel" required><br>
+
+        <label for="user_address">ที่อยู่:</label>
+        <input type="text" id="	user_address" name="user_address" required><br>
+
+        <label for="user_age">อายุ:</label>
+        <input type="text" id="user_age" name="user_age" required><br>
+
+        <label for="user_status">สถานะผู้ใช้งาน:</label>
+        <select id="user_status" name="user_status" required>
+            <option value="" selected>เลือกสถานะผู้ใช้งาน </option>";
+            <option value="1">บุคคลทั่วไป</option>
+            <option value="2">สมาชิก</option>
+            <option value="3">แอดมิน</option>
+        </select><br>
+
+        <label for="profile_img">เลือกรูปโปรไฟล์:</label>
+        <input type="file" id="profile_img" name="profile_img" size="50" required><br><br>
+        
+        <div>
+            <input type="submit" name="Submit" value="บันทึกข้อมูล" style="cursor:hand">
+            <input type="reset" name="Reset" value="ยกเลิก" style="cursor:hand">
+        </div>
+
+    </form>
+
+    <br><br><a href="list_member.php">แสดงผล</a>
+
+</body>
+</html>
