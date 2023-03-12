@@ -80,7 +80,8 @@ CREATE TABLE `tb_user` (
   `user_tel` varchar(10) NOT NULL COMMENT 'เบอร์โทรศัพท์',
   `user_address` text NOT NULL COMMENT 'ที่อยู่',
   `user_age` varchar(3) NOT NULL COMMENT 'อายุ',
-  `user_status` int(1) NOT NULL COMMENT 'สถานะผู้ใช้งาน 1=บุคคลทั่วไป, 2=สมาชิก, 3=แอดมิน'
+  `user_status` int(1) NOT NULL COMMENT 'สถานะผู้ใช้งาน 1=บุคคลทั่วไป, 2=สมาชิก, 3=แอดมิน',
+  `profile_img` text NOT NULL COMMENT 'รูปผู้ใช้งาน'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
