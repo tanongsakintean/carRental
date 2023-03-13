@@ -24,7 +24,11 @@ require("../layouts/head.php");
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <?php
-            require("../components/dashboard.php");
+            if (isset($_REQUEST['p'])) {
+                require("../components/" . $_REQUEST['p'] . ".php");
+            } else {
+                require("../components/dashboard.php");
+            }
             ?>
         </div>
         <!-- /.content-wrapper -->
