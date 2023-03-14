@@ -28,7 +28,7 @@
 
                 <form action="../actions/ac_register.php" method="post">
                     <div class="input-group mb-3">
-                        <select class="form-control" placeholder="คำนำหน้า" required>
+                        <select class="form-control" placeholder="คำนำหน้า" name="title" required>
                             <option selected disabled>เลือกคำนำหน้า</option>
                             <option value="1">นาย</option>
                             <option value="2">นาง</option>
@@ -40,21 +40,21 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="ชื่อจริง">
+                        <input type="text" class="form-control" name="fname" placeholder="ชื่อจริง">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="นามสกุล">
+                        <input type="text" class="form-control" name="lname" placeholder="นามสกุล">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <select class="form-control" required>
+                        <select class="form-control" name="gender" required>
                             <option selected disabled>เลือกเพศ</option>
                             <option value="1">ชาย</option>
                             <option value="2">หญิง</option>
@@ -65,35 +65,35 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" maxlength="10" class="form-control" placeholder="เบอร์โทร">
+                        <input name="tel" type="text" maxlength="10" class="form-control" placeholder="เบอร์โทร">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <textarea name="" placeholder="ที่อยู่" class="form-control" id="" cols="30" rows="2"></textarea>
+                        <textarea name="address" placeholder="ที่อยู่" class="form-control" id="" cols="30" rows="2"></textarea>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="อีเมลล์">
+                        <input type="email" name="email" class="form-control" placeholder="อีเมลล์">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="รหัสผ่านใหม่">
+                        <input id="newPassword" type="password" name="password" class="form-control" placeholder="รหัสผ่านใหม่">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="ยืนยันรหัสผ่าน">
+                        <input id="retypePassword" type="password" class="form-control" placeholder="ยืนยันรหัสผ่าน">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
@@ -124,3 +124,11 @@
 </body>
 
 </html>
+
+
+<script>
+    function checkPassword() {
+        let password = document.getElementById('#Password').value;
+        let newPassword = document.getElementById('#newPassword').value;
+    }
+</script>
