@@ -12,7 +12,6 @@
     <?php
     require('../connect.php');
     if (isset($_POST) && !empty($_POST)) {
-        $user_id = $_POST["user_id"];
         $user_email = $_POST["user_email"];
         $user_password = $_POST["user_password"];
         $user_title = $_POST["user_title"];
