@@ -61,27 +61,19 @@
                     </a>
 
                 </li>
+                <!-- /.sidebar-menu insert-->
+                <li class="nav-item">
+                    <a href="?p=list_member" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            แสดงผลข้อมูลสมาชิก
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
 
+                </li>
             </ul>
         </nav>
     </div>
-    <!-- /.sidebar-menu insert-->
-    <!-- /.sidebar-menu -->
-    <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-header">EXAMPLES</li>
-            <li class="nav-item">
-                <a href="?p=list_member" class="nav-link">
-                    <i class="nav-icon fas fa-table"></i>
-                    <p>
-                        แสดงผลข้อมูลสมาชิก
-                        <i class="fas fa-angle-left right"></i>
-                    </p>
-                </a>
-
-            </li>
-
-        </ul>
-    </nav>
     <!-- /.sidebar -->
 </aside>
