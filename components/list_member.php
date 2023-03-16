@@ -11,46 +11,46 @@ $result = mysqli_query($conn, $sql);
 <table border=1 style="width:100%">
     <tr>
         <th>
-            <h3>id</h3>
+            <h3>ลำดับ</h3>
         </th>
         <th>
-            <h3>Profile_img</h3>
+            <h3>รูปภาพ</h3>
         </th>
         <th>
-            <h3>User_Email</h3>
+            <h3>อีเมล</h3>
         </th>
         <th>
-            <h3>Password</h3>
+            <h3>รหัสผ่าน</h3>
         </th>
         <th>
-            <h3>title</h3>
+            <h3>คำนำหน้าชื่อ</h3>
         </th>
         <th>
-            <h3>FristName</h3>
+            <h3>ชื่อ</h3>
         </th>
         <th>
-            <h3>LastName</h3>
+            <h3>นามสกุล</h3>
         </th>
         <th>
-            <h3>Gender</h3>
+            <h3>เพศ</h3>
         </th>
         <th>
-            <h3>Telephone</h3>
+            <h3>เบอร์โทรศัพท์</h3>
         </th>
         <th>
-            <h3>User_Address</h3>
+            <h3>ที่อยู่</h3>
         </th>
         <th>
-            <h3>Age</h3>
+            <h3>อายุ</h3>
         </th>
         <th>
-            <h3>UserStatus</h3>
+            <h3>สถานะ</h3>
         </th>
         <th>
-            <h3>Edit</h3>
+            <h3>แก้ไขข้อมูล</h3>
         </th>
         <th>
-            <h3>Delete</h3>
+            <h3>ลบข้อมูล</h3>
         </th>
     </tr>
     <?php
