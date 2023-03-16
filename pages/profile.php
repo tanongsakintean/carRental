@@ -27,14 +27,6 @@
                 <div class="card text-center sidebar">
                     <div class ="card-boby">
                         <img src="image.jpg" class="rounded-circle" width="150">
-                        <div class="mt-3">
-                            <h3>Burk Macklin</h3>
-                            <button type="button" class="btn btn-light">Home</button><br>
-                            <button type="button" class="btn btn-light mt-2">work</button><br>
-                            <button type="button" class="btn btn-light mt-2">Support</button><br>
-                            <button type="button" class="btn btn-light mt-2">Setting</button><br>
-                            <button type="button" class="btn btn-light mt-2">Signout</button>
-                        </div>
                     </div>
                 </div> 
             </div>
@@ -54,39 +46,37 @@
                         <div class="col-md-3 m-lg-2">
                             <h5>Email</h5>
                         </div>
-                        <div class="col-md-3 text-secondary m-lg-2">
+                        <div class="col-md-5 text-secondary m-lg-3">
                             abc@gmail.com
                         </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-md-3 m-lg-2">
-                                <h5>Phone</h5>    
+                                <h5>Sex</h5>    
                             </div>
-                            <div class="col-md-3 text-secondary m-lg-2">
-                                00923469874656
+                            <div class="col-md-5 text-secondary m-lg-2">
+                                man
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-3 m-lg-2">
                                 <h5>Address</h5>
                             </div>
-                            <div class="col-md-3 text-secondary m-lg-2">
+                            <div class="col-md-5 text-secondary m-lg-2">
                                 street no.  4m xyz
                             </div>
+                        <div class="row">
+                            <div class="col-md-3 m-lg-2">
+                                <h5>Phone</h5>
+                            </div>
+                            <div class="col-md-5 text-secondary m-lg-2">
+                                0869999999
+                            </div>
+
                         </div>
                     </div>    
                 </div>
-                <div class="card mb-3 content mt-3">
-                    <h1 class="m-3">Recent Projects</h1>
-                    <div class"card-body">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <h5>Project name</h5>
-                            </div>
-                            <div class="col-md-3 text-secondary">
-                                Project Description
-                            </div>
                         </div>
                     </div>
                 </div>
