@@ -26,7 +26,7 @@
             <div class="col-md-4">
                 <div class="card text-center sidebar">
                     <div class ="card-boby">
-                        <img src="image.jpg" class="rounded-circle" width="150">
+                        <img src="https://i.pinimg.com/originals/70/e3/13/70e313cb759dfe20e87241f63d1aa233.jpg" class="rounded-circle" width="150">
                     </div>
                 </div> 
             </div>
