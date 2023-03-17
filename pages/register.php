@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="hold-transition register-page">
@@ -26,9 +27,9 @@
             <div class="card-body register-card-body">
                 <p class="login-box-msg">สมัครสมาชิกเข้าใช้งาน</p>
 
-                <form action="../actions/ac_register.php" method="post">
-                    <div class="input-group mb-3">
-                        <select class="form-control" placeholder="คำนำหน้า" required>
+                <form action="../actions/ac_register.php?ac=reg" method="post">
+                    <div class=" input-group mb-3">
+                        <select class="form-control" placeholder="คำนำหน้า" name="title" required>
                             <option selected disabled>เลือกคำนำหน้า</option>
                             <option value="1">นาย</option>
                             <option value="2">นาง</option>
@@ -40,21 +41,21 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="ชื่อจริง">
+                        <input type="text" class="form-control" name="fname" placeholder="ชื่อจริง" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="นามสกุล">
+                        <input type="text" class="form-control" name="lname" placeholder="นามสกุล" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <select class="form-control" required>
+                        <select class="form-control" name="gender" required>
                             <option selected disabled>เลือกเพศ</option>
                             <option value="1">ชาย</option>
                             <option value="2">หญิง</option>
@@ -65,35 +66,42 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" maxlength="10" class="form-control" placeholder="เบอร์โทร">
+                        <input type="number" class="form-control" name="age" placeholder="อายุ" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <textarea name="" placeholder="ที่อยู่" class="form-control" id="" cols="30" rows="2"></textarea>
+                        <input name="tel" type="text" maxlength="10" class="form-control" placeholder="เบอร์โทร" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="อีเมลล์">
+                        <textarea name="address" placeholder="ที่อยู่" class="form-control" id="" cols="30" rows="2" required></textarea>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="รหัสผ่านใหม่">
+                        <input type="email" name="email" class="form-control" placeholder="อีเมลล์" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="ยืนยันรหัสผ่าน">
+                        <input id="newPassword" type="password" name="password" class="form-control" placeholder="รหัสผ่านใหม่" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="retypePassword" type="password" name="rePassword" class="form-control" placeholder="ยืนยันรหัสผ่าน" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
@@ -121,6 +129,7 @@
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
+
 </body>
 
 </html>
