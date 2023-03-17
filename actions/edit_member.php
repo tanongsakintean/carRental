@@ -20,13 +20,13 @@ if (isset($_POST) && !empty($_POST)) {
         echo '<b><li>คุณไม่ได้เลือกรูปภาพ</li></b><br>';
     } else {
         move_uploaded_file($_FILES["proflie_img"]["tmp_name"], "../assets/images/" . $_FILES["profile_img"]["name"]);
-        $car_img = $_FILES['profile_img']['name'];
+        $profile_img = $_FILES['profile_img']['name'];
     }
 
     $sql_ed = "UPDATE tb_user SET user_email='$user_email', user_password='$user_password',
          user_title='$user_title', user_fname='$user_fname', user_lname='$user_lname',
           user_gender='$user_gender', user_tel='$user_tel', user_address='$user_address',
-           user_age='$user_age', user_status='$user_status' WHERE user_id = '$user_id'";
+           user_age='$user_age', user_status='$user_status', profile_img='$profile_img' WHERE user_id = '$user_id'";
     $queue_edit = mysqli_query($conn, $sql_ed);
 
     header("Location:../pages/admin.php?p=list_member");
