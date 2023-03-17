@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("../layouts/head.php");
 ?>
 
@@ -26,10 +27,8 @@ require("../layouts/head.php");
             <?php
             if (isset($_REQUEST['p'])) {
                 if (isset($_REQUEST['idcar'])) {
-                    $_SESSION['idcar'] = $_REQUEST['idcar'];
                     require("../components/" . $_REQUEST['p'] . ".php");
-                }
-                else{
+                } else {
                     require("../components/" . $_REQUEST['p'] . ".php");
                 }
             } else {

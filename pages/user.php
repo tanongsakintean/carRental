@@ -12,17 +12,15 @@ require("../layouts/head.php");
 
         <!-- Navbar -->
         <?php
-        require("../layouts/navbar.php");
+        require("../layouts/user_navbar.php");
         ?>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <?php
-        require("../layouts/sidebar.php");
-        ?>
+
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="content-wrapper" style=" margin-left:0;">
             <?php
             if (isset($_REQUEST['p'])) {
                 require("../components/" . $_REQUEST['p'] . ".php");
