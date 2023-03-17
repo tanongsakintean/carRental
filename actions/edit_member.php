@@ -1,11 +1,6 @@
 <?php
 require('../connect.php');
 
-$id = $_REQUEST['id'];
-$sql = "SELECT * FROM tb_user WHERE user_id = '$id'";
-$result = mysqli_query($conn, $sql);
-$data = mysqli_fetch_array($result);
-
 if (isset($_POST) && !empty($_POST)) {
     $user_id = $_POST["user_id"];
     $user_email = $_POST["user_email"];
@@ -31,10 +26,9 @@ if (isset($_POST) && !empty($_POST)) {
     $sql_ed = "UPDATE tb_user SET user_email='$user_email', user_password='$user_password',
          user_title='$user_title', user_fname='$user_fname', user_lname='$user_lname',
           user_gender='$user_gender', user_tel='$user_tel', user_address='$user_address',
-           user_age='$user_age', user_status='$user_status' WHERE user_id = '$id'";
+           user_age='$user_age', user_status='$user_status' WHERE user_id = '$user_id'";
     $queue_edit = mysqli_query($conn, $sql_ed);
 
     header("Location:../pages/admin.php?p=list_member");
 }
 ?>
-
