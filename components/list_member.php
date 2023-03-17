@@ -6,7 +6,7 @@ $result = mysqli_query($conn, $sql);
 
 ?>
 <center>
-    <h1>แสดงผลข้อมูลสมาชิก</h1>
+    <h1>จัดการสมาชิก</h1>
 </center>
 <table border=1 style="width:100%">
     <tr>

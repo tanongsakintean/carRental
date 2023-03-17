@@ -67,10 +67,8 @@ if(isset($_POST) && !empty($_POST)){
               
 
     mysqli_query($conn, $sql)or die("insert ลงตาราง tb_car มีข้อผิดพลาดเกิดขึ้น" .mysqli_error($conn));
-    echo '<br><br><h2>บันทึกข้อมูลรถเรียบร้อย</h2>';
-    echo '<br><br><a href="form_car.php">กลับหน้า form_car.php</a>';
-    echo '<br><br><a href="list_car.php">แสดงผลหน้า list_car.php</a>';
-    mysqli_close($conn);
+    header("Location:../pages/admin.php?p=list_car");
+    
 
 
 }

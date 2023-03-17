@@ -19,16 +19,15 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="#"><b>ระบบเช่ารถยนต์</b></a>
+            <a href="#"><b>สร้างรหัสผ่านใหม่</b></a>
         </div>
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">เข้าสู่ระบบ</p>
 
-                <form action="../actions/ac_login.php?ac=login" method="post">
+                <form action="../actions/ac_newPassword.php?ac=new" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" name="email" placeholder="อีเมลล์" required>
+                        <input type="password" class="form-control" name="newPassword" placeholder="รหัสผ่านใหม่" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -36,37 +35,19 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
+                        <input type="password" class="form-control" name="password" placeholder="ยืนยันรหัสผ่าน" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">
-                                    จดจำฉัน
-                                </label>
-                            </div>
-                        </div>
+                    <div class="">
                         <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">เข้าสู่ระบบ</button>
-                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">สร้างรหัสผ่านใหม่</button>
                         <!-- /.col -->
                     </div>
                 </form>
-
-
-                <p class="mb-1">
-                    <a href="./resetPassword.php">ฉันลืมรหัสผ่าน</a>
-                </p>
-                <p class="mb-0">
-                    <a href="./register.php" class="text-center">สมัครสมาชิก</a>
-                </p>
             </div>
             <!-- /.login-card-body -->
         </div>

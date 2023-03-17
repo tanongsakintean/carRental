@@ -25,7 +25,13 @@ require("../layouts/head.php");
         <div class="content-wrapper">
             <?php
             if (isset($_REQUEST['p'])) {
-                require("../components/" . $_REQUEST['p'] . ".php");
+                if (isset($_REQUEST['idcar'])) {
+                    $_SESSION['idcar'] = $_REQUEST['idcar'];
+                    require("../components/" . $_REQUEST['p'] . ".php");
+                }
+                else{
+                    require("../components/" . $_REQUEST['p'] . ".php");
+                }
             } else {
                 require("../components/dashboard.php");
             }
