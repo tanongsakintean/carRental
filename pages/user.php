@@ -17,15 +17,14 @@ require("../layouts/head.php");
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-
-
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper" style=" margin-left:0;">
+
             <?php
             if (isset($_REQUEST['p'])) {
                 require("../components/" . $_REQUEST['p'] . ".php");
             } else {
-                require("../components/home.php");
+                require("../components/rent_page.php");
             }
             ?>
         </div>

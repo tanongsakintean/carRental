@@ -2,10 +2,38 @@
 require("../actions/list_car.php");
 ?>
 
-<div class="col-12">
+
+<div id="carouselExampleControls" class="carousel slide m-5" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/images/benz.jpg" style="height: 32rem;object-fit:fill;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/images/BMW.jpg" style="height: 32rem;object-fit:fill;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/images/honda.jpg" style="height: 32rem;object-fit:fill;" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+
+<div class="col-12 p-5">
   <div class="card card-primary">
     <div class="card-header">
-      <h4 class="card-title">Rent Car</h4>
+      <h4 class="card-title">รายการรถเช่า</h4>
     </div>
     <div class="container">
       <div class="row py-4">

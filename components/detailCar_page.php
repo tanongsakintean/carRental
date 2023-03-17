@@ -7,23 +7,6 @@ $image = "<img src=$Path$data[car_img] align=\"center\" width=\"750\" height=\"5
 ?>
 
 <!-- Content Header (Page header) -->
-<section class="content-header">
-  <div class="container-fluid">
-    <div class="row mb-2">
-      <div class="col-sm-6">
-        <!-- <h1>Details Of The Car</h1> -->
-
-      </div>
-      <div class="col-sm-6">
-        <ol class="breadcrumb float-sm-right">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active">E-commerce</li>
-        </ol>
-      </div>
-    </div>
-  </div><!-- /.container-fluid -->
-</section>
-<br><br>
 
 <!-- Main content -->
 <section class="content">
@@ -105,16 +88,20 @@ $image = "<img src=$Path$data[car_img] align=\"center\" width=\"750\" height=\"5
 
           <?php
           echo "<div class=\"mt-4\">";
-          if ($data['car_status'] == "2") {
+          if ($data['car_status'] == "2" && $_SESSION['ses_user']->user_status == 2) {
 
             // <!-- Button trigger modal -->
             echo "<button type=\"button\" class=\"btn btn-primary btn-lg\" data-bs-toggle=\"modal\" data-bs-target=\"#staticBackdrop\">
                     <i class=\"fa-solid fa-check\">&nbsp;สามารถเช่ารถได้</i>
                     </button>";
-          } else {
+          } else if ($data['car_status'] == "1" || $data['car_status'] == "3" && $_SESSION['ses_user']->user_status == 2) {
             echo "<button type=\"button\" class=\"btn btn-secondary btn-lg\" data-bs-toggle=\"\" data-bs-target=\"#staticBackdrop\">
                   <i class=\"fa-solid fa-xmark\">&nbsp;ไม่สามารถเช่ารถได้</i>
                   </button>";
+          } else {
+            echo "<a href='../pages/login.php' type=\"button\" class=\"btn btn-danger btn-lg\" data-bs-toggle=\"\" data-bs-target=\"#staticBackdrop\">
+            <i class=\"fa-solid fa-xmark\">&nbsp;โปรดสมัครสมาชิกก่อนเช่ารถ</i>
+            </a>";
           }
           echo "</div>";
           ?>
