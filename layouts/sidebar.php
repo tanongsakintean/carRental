@@ -55,7 +55,7 @@
                     <a href="?p=form_member" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
-                            แบบฟอร์มเพิ่มสมาชิก
+                            เพิ่มสมาชิก
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -66,7 +66,7 @@
                     <a href="?p=list_member" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
-                            แสดงผลข้อมูลสมาชิก
+                            จัดการสมาชิก
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
