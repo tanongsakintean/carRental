@@ -38,7 +38,7 @@
                             <h5>Full Name</h5>
                         </div>
                         <div class="col-md-9 text-secondary">
-                            Burt Macklin
+                        ทางเดินวน กับคนหลายใจ
                         </div>
                     </div>
                     <hr>
@@ -56,7 +56,7 @@
                                 <h5>Sex</h5>    
                             </div>
                             <div class="col-md-5 text-secondary m-lg-2">
-                                man
+                                men
                             </div>
                         </div>
                         <div class="row">
