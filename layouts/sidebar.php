@@ -44,6 +44,39 @@
 
                 </li>
 
+                <li class="nav-item">
+                    <a href="?p=rent_page" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            เช่ารถ
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="?p=form_car" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            แบบฟอร์มกรอกข้อมูลรถ
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="?p=list_rent" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            ตารางการเช่ารถ
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+
+                </li>
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

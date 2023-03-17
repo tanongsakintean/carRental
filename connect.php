@@ -5,7 +5,7 @@ $database = "carRental";
 
 $username = "root";
 
-$password = "root";
+$password = "";
 
 // Create connection
 
