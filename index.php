@@ -10,5 +10,5 @@ if (isset($_SESSION['ses_id']) && $_SESSION['ses_id'] == session_id()) {
         header("Location: ./pages/user.php");
     }
 } else {
-    header("Location: ./pages/user.php");
+    header("Location: ./pages/login.php");
 }
