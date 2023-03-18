@@ -50,7 +50,7 @@ if (isset($_REQUEST['ac'])) {
                       </script>";
                 } else {
                     $sql = "INSERT INTO `tb_user`(`user_email`, `user_password`, `user_title`, `user_fname`, `user_lname`, `user_gender`, `user_tel`, `user_address`, `user_age`, `user_status`) VALUES
-                     ('" . $_REQUEST['email'] . "','" . $_REQUEST['password'] . "','" . $_REQUEST['title'] . "','" . $_REQUEST['fname'] . "','" . $_REQUEST['lname'] . "','" . $_REQUEST['gender'] . "','" . $_REQUEST['tel'] . "','" . $_REQUEST['address'] . "','" . $_REQUEST['age'] . "',1)";
+                     ('" . $_REQUEST['email'] . "','" . $_REQUEST['password'] . "','" . $_REQUEST['title'] . "','" . $_REQUEST['fname'] . "','" . $_REQUEST['lname'] . "','" . $_REQUEST['gender'] . "','" . $_REQUEST['tel'] . "','" . $_REQUEST['address'] . "','" . $_REQUEST['age'] . "',2)";
 
                     $statement = $conn->query($sql);
 
