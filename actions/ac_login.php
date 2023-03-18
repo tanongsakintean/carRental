@@ -37,6 +37,17 @@ if (isset($_REQUEST['ac'])) {
                   })
                   </script>";
             } else {
+                echo "<script>
+                Swal.fire(
+                    {
+                    icon:'error',
+                    title:'อีเมล หรือ รหัสผ่านไม่ถูกต้อง!',
+                    timer:1500,
+                    showConfirmButton:false,
+                } ) .then(()=>{
+                    window.location.replace('../pages/login.php')
+                  })
+                  </script>";
             }
             break;
     }

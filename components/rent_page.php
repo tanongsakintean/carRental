@@ -78,18 +78,7 @@ require("../actions/list_car.php");
             $Path = "../assets/images/"; //ระบุ path ของไฟล์รูปภาพที่จัดเก็บไว้ใน server
             $image = "<img src=$Path$data[car_img] width=\"250\" height=\"200\" class=\"mt-5 p-1 my-2 border\">";
             ?>
-<<<<<<< HEAD
-            <div class="col-md-3">
-                <div class = "text-center">
-                    <?= $image ?><br>
-                    <b>ID : <?= $data['car_id'] ?></b><br>
-                    <b>BRAND :</b> <?= $data['car_name'] ?><br>
-                    <b>Car Type :</b> <?= $type ?><br>
-                    <b>Status :</b> <?= $status ?><br>
-                    <a class="btn btn-outline-success mt-3" href="?p=detailCar_page&idcar=<?= $data['car_id'] ?>"> <b>See More Detail</b> </a>
-                    <!-- <a class="btn btn-outline-success mt-3" href="../components/detailCar_page.php?idcar=<?= $data['car_id'] ?>"> See More Detail </a> -->
-                </div>
-=======
+
             <div class="col-md-3" style="box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.17);border:1px solid rgba(0,0,0,0.17);">
               <div class="text-center p-2">
                 <?= $image ?><br>
@@ -100,7 +89,6 @@ require("../actions/list_car.php");
                 <a class="btn btn-outline-success mt-3" href="?p=detailCar_page&idcar=<?= $data['car_id'] ?>"> See More Detail </a>
                 <!-- <a class="btn btn-outline-success mt-3" href="../components/detailCar_page.php?idcar=<?= $data['car_id'] ?>"> See More Detail </a> -->
               </div>
->>>>>>> c93f58ac359c53d51d5178037a84a3027bd01b52
             </div>
           <?php }
           ?>

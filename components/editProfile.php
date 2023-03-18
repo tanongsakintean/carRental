@@ -15,8 +15,7 @@ $data = mysqli_fetch_array($result);
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form enctype="multipart/form-data" action="../actions/edit_member.php" method="post">
-                <input type="hidden" name="user_id" value="<?= $data['user_id'] ?>" required>
+            <form enctype="multipart/form-data" action="../actions/ac_editProfile.php?user_id=<?php echo $id; ?>" method="post">
                 <div class="card-body">
                     <div class="form-group">
                         <label for="user_email">อีเมลล์:</label>
@@ -67,15 +66,7 @@ $data = mysqli_fetch_array($result);
                         <input type="number" value="<?= $data['user_age'] ?>" class="form-control" id="user_age" name="user_age" required>
                     </div>
 
-                    <div class="form-group">
-                        <label>สถานะผู้ใช้งาน:</label>
-                        <select value="<?= $data['user_status'] ?>" class="form-control" id="user_status" name="user_status" required>
-                            <option value="" selected>เลือกสถานะผู้ใช้งาน </option>";
-                            <option value="1">บุคคลทั่วไป</option>
-                            <option value="2">สมาชิก</option>
-                            <option value="3">แอดมิน</option>
-                        </select>
-                    </div>
+
 
                     <div class="form-group">
                         <label for="profile_img">เลือกรูปโปรไฟล์:</label>
@@ -92,10 +83,10 @@ $data = mysqli_fetch_array($result);
                 </div>
         </div>
         <!-- /.card-body -->
-        <div class="card-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
+        <div class="card-footer  d-flex justify-content-end">
+            <button type="submit" class="btn btn-warning">แก้ไขข้อมูล</button>
         </div>
+        <br>
         </form>
     </div>
     </div>

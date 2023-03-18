@@ -4,7 +4,7 @@
 
     <div class="card card-primary">
       <div class="card-header">
-        <h3 class="card-title">Form Car</h3>
+        <h3 class="card-title">ฟอร์มเพิ่มรถเช่าเข้าสู่ระบบ</h3>
       </div>
       <!-- /.card-header -->
       <!-- form start -->
@@ -28,8 +28,7 @@
 
           <div class="form-group">
             <label for="car_price">ราคาเช่า/ต่อวัน</label>
-            <input type="text" class="form-control" id="car_price" name="car_price" placeholder="ราคาเช่า/ต่อวัน"
-              required>
+            <input type="text" class="form-control" id="car_price" name="car_price" placeholder="ราคาเช่า/ต่อวัน" required>
           </div>
 
           <div class="form-group">

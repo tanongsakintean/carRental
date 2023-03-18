@@ -126,7 +126,7 @@ $image = "<img src=$Path$data[car_img] align=\"center\" width=\"750\" height=\"5
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <form action="../actions/rent_date.php" method="post">
+        <form action="../actions/rent_date.php?user_id=<?php echo $_SESSION['ses_user']->user_id; ?>" method="post">
 
           <div class="modal-body">
             <label for="date">Start Date:</label>
@@ -145,7 +145,7 @@ $image = "<img src=$Path$data[car_img] align=\"center\" width=\"750\" height=\"5
               </span>
             </div>
 
-            <input type="hidden" name="car_id" value="<?= $_SESSION['idcar'] ?>">
+            <input type="hidden" name="car_id" value="<?= $_REQUEST['idcar'] ?>">
 
           </div>
           <div class="modal-footer">

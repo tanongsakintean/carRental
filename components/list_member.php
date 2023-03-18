@@ -4,9 +4,6 @@ $sql = "SELECT * FROM tb_user";
 $result = mysqli_query($conn, $sql);
 ?>
 
-<?php
-require("../layouts/head.php");
-?>
 
 <div class="card">
     <div class="card-header">
@@ -119,8 +116,3 @@ require("../layouts/head.php");
     <!-- /.card-body -->
 </div>
 <!-- /.card -->
-
-
-<?php
-require("../layouts/js.php");
-?>
