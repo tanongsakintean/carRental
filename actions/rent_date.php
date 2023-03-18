@@ -5,7 +5,7 @@ require('../connect.php');
 
 
 if ($_POST['rent_start'] != "" and $_POST['rent_end'] != "") {
-    $user_id = "ว่าง";
+    $user_id = "ว่าง";  //$user_id = $_SESSION['id'];
     $car_id = $_POST['car_id'];
     $rent_start = $_POST['rent_start'];
     $rent_end = $_POST['rent_end'];

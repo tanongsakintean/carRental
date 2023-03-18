@@ -53,11 +53,11 @@
             <div class="col-md-3">
                 <div class = "text-center">
                     <?= $image ?><br>
-                    ID : <?= $data['car_id'] ?><br>
-                    BRAND : <?= $data['car_name'] ?><br>
-                    Car Type : <?= $type ?><br>
-                    Status : <?= $status ?><br>
-                    <a class="btn btn-outline-success mt-3" href="?p=detailCar_page&idcar=<?= $data['car_id'] ?>"> See More Detail </a>
+                    <b>ID : <?= $data['car_id'] ?></b><br>
+                    <b>BRAND :</b> <?= $data['car_name'] ?><br>
+                    <b>Car Type :</b> <?= $type ?><br>
+                    <b>Status :</b> <?= $status ?><br>
+                    <a class="btn btn-outline-success mt-3" href="?p=detailCar_page&idcar=<?= $data['car_id'] ?>"> <b>See More Detail</b> </a>
                     <!-- <a class="btn btn-outline-success mt-3" href="../components/detailCar_page.php?idcar=<?= $data['car_id'] ?>"> See More Detail </a> -->
                 </div>
             </div>

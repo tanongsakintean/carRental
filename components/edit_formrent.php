@@ -14,7 +14,7 @@
 
                 
                     <div class="form-group">
-                        <label>แก้ไขสถานะการเช่าของรหัสการเช่าที่ : <?= $_SESSION['idcar']?></label>
+                        <label>แก้ไขสถานะการเช่าของรหัสการเช่าที่ : <?= $_REQUEST['idcar']?></label>
                         <select class="form-control" name="rent_status" required>
                             <option value="" selected>เลือกสถานะการเช่า </option>"
                             <option value="1" >กำลังเช่า</option>
@@ -23,7 +23,7 @@
                         </select>
                     </div>
 
-                    <input type="hidden" name="rent_id" value="<?= $_SESSION['idcar']?>" required>
+                    <input type="hidden" name="rent_id" value="<?= $_REQUEST['idcar']?>" required>
 
                   </div>
 

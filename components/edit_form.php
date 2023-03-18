@@ -1,7 +1,7 @@
 <?php
     require('../connect.php');
 
-    $idcar = $_SESSION['idcar'];
+    $idcar = $_REQUEST['idcar'];
     $sql = "SELECT * FROM tb_car WHERE car_id = '$idcar'";
     $result = mysqli_query($conn,$sql);
     $data = mysqli_fetch_array($result);
